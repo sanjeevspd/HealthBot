@@ -14,14 +14,11 @@ from sklearn.preprocessing import LabelEncoder
 from scipy.stats import mode
 
 # AWS S3 Configuration (Hardcoded for testing, remove before production)
-AWS_ACCESS_KEY = "AKIAQ3EGRK2RPWM3RWFN"
-AWS_SECRET_KEY = "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"
-BUCKET_NAME = "diseasepredictionwe3"
+
+BUCKET_NAME = "healthbotwe3"
 
 s3_client = boto3.client(
     "s3",
-    aws_access_key_id=AWS_ACCESS_KEY,
-    aws_secret_access_key=AWS_SECRET_KEY
 )
 
 
